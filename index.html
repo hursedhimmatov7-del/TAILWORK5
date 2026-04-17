@@ -5,8 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    
+<body class="bg-[#252B42] text-white font-serif ">
+    <header class="lg:max-w-300 w-[90%] m-auto flex items-center justify-between py-5"> 
+        <div class="flex items-center gap-x-30"> 
+            <h1 class="lg:text-3xl text-2xl">BrandName</h1>
+            <nav class="lg:flex hidden items-center gap-x-10">
+                <p>Home</p>
+                <p>Product</p>
+                <p>Pricing</p>
+                <p>Contact</p>
+            </nav>
+        </div>
+        <div class="lg:flex hidden items-center gap-x-7">
+            <p>Login</p>
+            <button class="flex items-center gap-x-5 p-[10px_35px] bg-[#23A6F0] rounded-md">Become a member <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+        <div class="lg:hidden flex items-center gap-x-7">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-bars-staggered"></i>
+        </div>
+    </header>
+    <header class="">
+                 <nav class="lg:hidden flex flex-col items-center gap-x-10 text-3xl gap-y-8 my-20">
+                <p>Home</p>
+                <p>Product</p>
+                <p>Pricing</p>
+                <p>Contact</p>
+            </nav>
+    </header>
+    <section class="w-full relative" >
+        <img class="lg:hidden flex absolute left-0 top-0 w-25" src="src/e4.png" alt="">
+        <img class=" lg:flex hidden absolute -top-40 w-full" src="src/e2.png" alt="">
+    <aside class="lg:max-w-300 w-[90%] m-auto lg:my-20 flex lg:flex-row flex-col gap-y-10 items-center justify-between relative lg:py-10">
+            <div class="flex flex-col lg:items-start items-center gap-y-7">
+             <h1 class="lg:text-[68px] lg:w-[70%] text-4xl w-[50%] text-center ">Financial Assistance With True Purpose</h1>
+            <p class="lg:text-2xl lg:w-[50%] text-2xl w-[70%] text-center">We know how large objects will act, 
+but things on a small scale.</p>
+<div class="flex lg:flex-row flex-col gap-y-5 gap-x-5">
+    <button class="p-[15px_30px] bg-[#23A6F0] rounded-4xl">Get Quote Now</button>
+    <button class="border-2 p-[15px_30px] rounded-4xl">Learn More</button>
+</div>
+        </div>
+        <img class="lg:flex hidden" src="src/e1.png" alt="">
+        <img class="lg:hidden flex" src="src/e3.png" alt="">
+    </aside>
+    </section>
 </body>
 </html>
