@@ -188,6 +188,9 @@
   .relative {
     position: relative;
   }
+  .start {
+    inset-inline-start: var(--spacing);
+  }
   .-top-40 {
     top: calc(var(--spacing) * -40);
   }
@@ -227,6 +230,12 @@
   .w-\[40\%\] {
     width: 40%;
   }
+  .w-\[45\%\] {
+    width: 45%;
+  }
+  .w-\[48\%\] {
+    width: 48%;
+  }
   .w-\[50\%\] {
     width: 50%;
   }
@@ -257,6 +266,9 @@
   .flex-wrap {
     flex-wrap: wrap;
   }
+  .items-baseline {
+    align-items: baseline;
+  }
   .items-center {
     align-items: center;
   }
@@ -271,6 +283,9 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
+  }
+  .gap-x-4 {
+    column-gap: calc(var(--spacing) * 4);
   }
   .gap-x-5 {
     column-gap: calc(var(--spacing) * 5);
@@ -325,17 +340,35 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .p-\[2\%\] {
+    padding: 2%;
+  }
+  .p-\[2\] {
+    padding: 2;
+  }
   .p-\[3\%\] {
     padding: 3%;
+  }
+  .p-\[10\%\] {
+    padding: 10%;
   }
   .p-\[10px_35px\] {
     padding: 10px 35px;
   }
+  .p-\[15px-30px\] {
+    padding: 15px-30px;
+  }
   .p-\[15px_30px\] {
     padding: 15px 30px;
   }
+  .p-\[15px_40px\] {
+    padding: 15px 40px;
+  }
   .p-\[15px_\] {
     padding: 15px ;
+  }
+  .p-\[20\%\] {
+    padding: 20%;
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
@@ -345,6 +378,12 @@
   }
   .text-center {
     text-align: center;
+  }
+  .text-start {
+    text-align: start;
+  }
+  .text-start\! {
+    text-align: start !important;
   }
   .font-serif {
     font-family: var(--font-serif);
@@ -373,12 +412,24 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
+  .text-\[10px\] {
+    font-size: 10px;
+  }
+  .text-\[13px\] {
+    font-size: 13px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
+  }
   .text-\[16px\] {
     font-size: 16px;
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .text-\[\#23A6F0\] {
+    color: #23A6F0;
   }
   .text-\[\#252B42\] {
     color: #252B42;
@@ -388,6 +439,9 @@
   }
   .text-\[\#A8A8A8\] {
     color: #A8A8A8;
+  }
+  .text-\[grey\] {
+    color: grey;
   }
   .text-black {
     color: var(--color-black);
@@ -401,6 +455,9 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .text-shadow-2xs {
+    text-shadow: 0px 1px 0px var(--tw-text-shadow-color, rgb(0 0 0 / 0.15));
   }
   .lg\:my-20 {
     @media (width >= 64rem) {
@@ -493,6 +550,11 @@
       background-image: none !important;
     }
   }
+  .lg\:p-\[2\%\] {
+    @media (width >= 64rem) {
+      padding: 2%;
+    }
+  }
   .lg\:py-10 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 10);
@@ -562,12 +624,23 @@
   inherits: false;
   initial-value: solid;
 }
+@property --tw-text-shadow-color {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-text-shadow-alpha {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 100%;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
+      --tw-text-shadow-color: initial;
+      --tw-text-shadow-alpha: 100%;
     }
   }
 }
